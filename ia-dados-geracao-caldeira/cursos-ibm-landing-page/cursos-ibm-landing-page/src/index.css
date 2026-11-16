@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* IBM Color Palette */
+    --background: 0 0% 98%;
+    --foreground: 220 16% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 16% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 16% 22%;
+
+    /* IBM Blue Primary */
+    --primary: 219 100% 53%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 219 100% 46%;
+    
+    /* Secondary grays */
+    --secondary: 220 13% 95%;
+    --secondary-foreground: 220 16% 22%;
+
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 240 100% 97%;
+    --accent-foreground: 219 100% 53%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 219 100% 53%;
+
+    --radius: 0.75rem;
+
+    /* IBM Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(219, 100%, 53%), hsl(240, 100%, 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(220, 13%, 98%));
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(220 16% 22% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(220 16% 22% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(220 16% 22% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(220 16% 22% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 220 18% 12%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 18% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 18% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 219 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 219 100% 53%;
+
+    --secondary: 220 13% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 13% 20%;
+    --muted-foreground: 220 9% 65%;
+
+    --accent: 220 18% 25%;
+    --accent-foreground: 219 100% 60%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 13% 25%;
+    --input: 220 13% 25%;
+    --ring: 219 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['IBM_Plex_Sans',sans-serif];
+    font-feature-settings: 'liga' 1, 'calt' 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
