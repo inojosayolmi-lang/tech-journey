@@ -1,30 +1,30 @@
-# Techhelp Solution logo
+# Dashboard TechHelp Solutions — Suporte Técnico
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+O Dashboard TechHelp Solutions é uma aplicação web desenvolvida para organizar e visualizar dados de atendimentos de suporte técnico.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/inojosayolmi-3398s-projects/v0-techhelp-solution-logo)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/kgFl7R9p5jd)
+A interface apresenta inicialmente uma amostra de dados para demonstrar os indicadores e gráficos disponíveis. O usuário também pode enviar um arquivo PDF com os dados dos chamados para visualizar as informações no dashboard.
 
-## Overview
+## Funcionalidades
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+- Apresentação inicial com dados de demonstração.
+- Upload de arquivos PDF com informações dos chamados.
+- Acompanhamento de chamados abertos e em andamento.
+- Identificação dos responsáveis pelos atendimentos.
+- Visualização de chamados por status.
+- Análise da satisfação dos clientes.
+- Classificação de chamados por prioridade.
+- Distribuição de chamados por departamento.
 
-## Deployment
+## Tecnologias
 
-Your project is live at:
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Recharts
+- Lucide React
 
-**[https://vercel.com/inojosayolmi-3398s-projects/v0-techhelp-solution-logo](https://vercel.com/inojosayolmi-3398s-projects/v0-techhelp-solution-logo)**
 
-## Build your app
+## Objetivo
 
-Continue building your app on:
-
-**[https://v0.app/chat/kgFl7R9p5jd](https://v0.app/chat/kgFl7R9p5jd)**
-
-## How It Works
-
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Facilitar o acompanhamento das atividades de suporte técnico por meio da visualização organizada de dados e indicadores, contribuindo para uma análise mais clara dos atendimentos.
